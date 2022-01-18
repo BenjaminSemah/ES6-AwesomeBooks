@@ -1,8 +1,9 @@
-import { titleInput, authorInput } from '../index.js'
+const titleInput = document.querySelector('.bk-title-input');
+const authorInput = document.querySelector('.bk-author-input');
 
 export default class BookObject {
   constructor() {
-    this.booksArray = localStorage.getItem('bookStorage') ? JSON.parse(localStorage.getItem('bookStorage')) : [];;
+    this.booksArray = localStorage.getItem('bookStorage') ? JSON.parse(localStorage.getItem('bookStorage')) : [];
   }
 
   addNewBook = () => {
