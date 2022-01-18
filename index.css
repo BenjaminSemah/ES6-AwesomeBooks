@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 5%;
+  border: 1px solid grey;
+  padding: 5px 10px;
+}
+
+.awesome-books {
+  margin: 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.nav-items {
+  margin: 0;
+}
+
+.awesome-books:hover,
+.nav-items:hover {
+  cursor: pointer;
+}
+
+.bordered {
+  border-right: 2px solid grey;
+  padding-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.all-awesome-container {
+  display: block;
+}
+
+#booksContainer {
+  list-style: none;
+  padding-inline-start: 0;
+  border: 2px solid grey;
+  margin: 5px 5%;
+}
+
+.book-title {
+  margin: 2px 0;
+}
+
+.by-word {
+  margin: 0;
+}
+
+.singlebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.singlebook:nth-child(odd) {
+  background-color: rgb(228, 227, 227);
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-book-container {
+  display: none;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.bk-title-input,
+.bk-author-input {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+
+.add-new-book {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.add-book-btn {
+  width: 60px;
+  margin-left: auto;
+}
+
+.contact-info {
+  display: none;
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-info-title {
+  text-align: center;
+}
+
+.contact-info-brief {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.contact-details {
+  font-size: 0.9em;
+  padding-left: 70px;
+}
+
+.footer {
+  border: 1px solid grey;
+  /* position: fixed; */
+  bottom: 0;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.display-content {
+  display: block;
+}
+
+.undisplayed {
+  display: none;
+}
