@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav id="navbar">
+    <p class="awesome-books">Awesome Books</p>
+    <ul class="nav-list">
+      <li id="list" class="nav-items bordered">List</li>
+      <li id="add-new" class="nav-items bordered">Add New</li>
+      <li id="contact" class="nav-items">Contact</li>
+    </ul>
+  </nav>
+  <div class="date-and-time"></div>
+  <div class="all-awesome-container">
+    <h1>All Awesome Books</h1>
+    <ul id="booksContainer">
+      <!-- BOOKS GENERATED DYNAMICALLY USING JAVASCRIPT -->
+    </ul>
+  </div>
+  <div class="add-book-container">
+    <div class="add-book-form">
+      <p class="add-new-book">Add a new book</p>
+      <input type="text" class="bk-title-input" placeholder="Title"> 
+      <input type="text" class="bk-author-input" placeholder="Author">
+      <button class="add-book-btn" type="button">ADD</button>
+    </div>
+  </div>
+  <div class="contact-info">
+    <h2 class="contact-info-title">Contact Information</h2>
+    <p class="contact-info-brief">
+      Do you have any questions or you just want to say "Hello"?<br>
+      You can reach out to us!
+    </p>
+    <ul class="contact-details">
+      <li>Our e-mail: mail@happydevs.com</li>
+      <li>Our phone number: 00123456789</li>
+      <li>Our address: Bunch of happy devs in the City.</li>
+    </ul>
+  </div>
+  <footer class="footer">
+    <p class="footer-text">Copyright... (c) 2022</p>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
