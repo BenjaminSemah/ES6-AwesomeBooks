@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-
-// import { newBook, booksContainer } from '../index.js';
 import BookObject from './bookObject.js';
 
 export const newBook = new BookObject();
