@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import BookObject from './bookObject.js';
 
 export const newBook = new BookObject();
