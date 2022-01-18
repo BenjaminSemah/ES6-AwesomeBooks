@@ -1,6 +1,7 @@
 import { newBook } from "../index.js"
 
-export default function renderBooks() {
+let renderBooks;
+export default renderBooks = () => {
   let bookHTML = '';
   newBook.booksArray.forEach((book) => {
     bookHTML

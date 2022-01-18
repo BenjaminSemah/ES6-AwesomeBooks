@@ -5,7 +5,7 @@ export default class BookObject {
     this.booksArray = localStorage.getItem('bookStorage') ? JSON.parse(localStorage.getItem('bookStorage')) : [];;
   }
 
-  addNewBook() {
+  addNewBook = () => {
     const titleTrim = titleInput.value.trim();
     const authorTrim = authorInput.value.trim();
     const bookId = new Date().getTime();
@@ -22,7 +22,7 @@ export default class BookObject {
     authorInput.value = '';
   }
 
-  removeBook(btn) {
+  removeBook = (btn) => {
     btn.parentNode.remove();
     localStorage.setItem('bookStorage', JSON.stringify(this.booksArray));
   }
