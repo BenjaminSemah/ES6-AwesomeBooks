@@ -1,11 +1,13 @@
 import BookObject from './modules/bookObject.js'
-import renderBooks from './modules/renderBooks.js';
+import renderBooks from './modules/renderBooks.js'
+import { DateTime } from './node_modules/luxon/src/luxon.js'
 
 export let newBook = new BookObject()
 export const titleInput = document.querySelector('.bk-title-input');
 export const authorInput = document.querySelector('.bk-author-input');
 const booksContainer = document.querySelector('#booksContainer');
 const addButton = document.querySelector('.add-book-btn');
+const dateDiv = document.querySelector('.date-and-time');
 
 const btnList = document.getElementById('list');
 const btnAddNew = document.getElementById('add-new');
@@ -14,6 +16,10 @@ const btnContact = document.getElementById('contact');
 const listbooksContainer = document.querySelector('.all-awesome-container');
 const addBookContainer = document.querySelector('.add-book-container');
 const contactContainer = document.querySelector('.contact-info');
+
+const dateAndTime = DateTime.now().toHTTP();
+
+dateDiv.innerHTML = dateAndTime;
 
 btnList.addEventListener('click', () => {
   listbooksContainer.style.display = 'block';
@@ -47,5 +53,7 @@ booksContainer.addEventListener('click', (event) => {
     newBook.removeBook(button);
   }
 });
+
+
 
 renderBooks();

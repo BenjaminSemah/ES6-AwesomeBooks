@@ -155,3 +155,7 @@ h1 {
 .undisplayed {
   display: none;
 }
+
+.date-and-time {
+  margin-bottom: 20px;
+}
